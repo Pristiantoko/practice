@@ -1,0 +1,7 @@
+#!/bin/sh
+#Ilustrate the use of positional parameters user-defined
+#variables and the read command.
+echo `what is your name?`
+read name
+echo "well, $name, you typed $# arguments:"
+echo $*

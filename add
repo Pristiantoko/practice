@@ -1,0 +1,4 @@
+#!/bin/sh
+# add two numbers
+sum=`expr $1 + $2`
+echo $sum

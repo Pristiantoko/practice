@@ -1,0 +1,10 @@
+#!/bin/sh
+# An improved spelling-checker
+file=$1
+for word in `spell $file`
+do
+line=`grep -n $word $file`
+echo "   "
+echo "Misspelled word: $word"
+echo "$line"
+done

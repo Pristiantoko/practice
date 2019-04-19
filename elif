@@ -1,0 +1,13 @@
+#!/bin/sh
+set `date`
+if test $1 = Sat
+then
+echo "Thank googness it's Saturday!"
+elif test $1 = Sat || test $1 = Sun
+then
+echo "You should not here working."
+echo "Log off and go home."
+else
+echo "It is not yet the weekend."
+echo "Get to work!"
+fi

@@ -1,0 +1,7 @@
+#!/bin/sh
+# Label the output from wc
+set `wc $1`
+echo "File: $4"
+echo "Lines: $1"
+echo "Words: $2"
+echo "characters: $3"

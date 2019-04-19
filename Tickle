@@ -1,0 +1,15 @@
+#!/bin/sh
+# A daily reminder service
+set `date`
+echo "Remember for today:"
+case $1 in
+	Mon) echo "Plan the week.";;
+	Tue) echo "Take clothes to the cleaners.";;
+	Wed) echo "Attend group meeting.";;
+	Thu) echo "Make plans for weekend.";
+		echo "Pick up clothes at the cleaners.";;
+	Fri) echo "Answer e-mail.";;
+	Sat) echo "You should not be here working.";
+		echo "Finish your work and log off.";;
+	Sun) echo "Cal Grandma and Grandpa.";;
+esac

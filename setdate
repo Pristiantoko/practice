@@ -1,0 +1,6 @@
+#!/bin/sh
+#Demonstrate the set command
+set `date`
+echo "Time: $4 $5"
+echo "Day: $1"
+echo "Date: $3 $2 $6"

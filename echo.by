@@ -1,0 +1,11 @@
+#!/bin//sh
+# Echo a line n times
+count=$1
+shift
+message=$*
+
+while test $count -gt 0
+do
+	echo $message
+	count=`expr $count - 1`
+done

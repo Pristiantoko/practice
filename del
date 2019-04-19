@@ -1,0 +1,18 @@
+#!/bin/sh
+#Delete a file imteractively
+filename=$1
+
+if test ! -f $filename
+then
+	echo "There is no file\"$filename\"."
+else
+	echo "Do you want to delete\"$filename\"?"
+	read choice
+	if test $choice = y
+	then
+		rm $filename
+		echo "\"$filename\" deleted."
+	else
+		echo "\"$filename\" not deleted."
+	fi
+fi
